@@ -1,0 +1,101 @@
+---
+# https://clang.llvm.org/docs/ClangFormatStyleOptions.html
+Language: Cpp
+BasedOnStyle: LLVM
+AccessModifierOffset: -4
+AlignArrayOfStructures: Left
+AlignAfterOpenBracket: Align
+AlignConsecutiveAssignments:
+  Enabled: true
+  AcrossEmptyLines: true
+  AcrossComments: true
+AlignConsecutiveDeclarations: true
+AlignEscapedNewlinesLeft: false
+AlignOperands: true
+AlignTrailingComments: true
+AllowShortLambdasOnASingleLine: true
+AllowAllParametersOfDeclarationOnNextLine: true
+AllowShortBlocksOnASingleLine: false
+AllowShortCaseLabelsOnASingleLine: false
+AllowShortFunctionsOnASingleLine: InlineOnly
+AllowShortIfStatementsOnASingleLine: false
+AllowShortLoopsOnASingleLine: false
+AlwaysBreakAfterDefinitionReturnType: None
+AlwaysBreakAfterReturnType: None
+AlwaysBreakBeforeMultilineStrings: false
+AlwaysBreakTemplateDeclarations: true
+BinPackArguments: false
+BinPackParameters: false
+BreakBeforeBraces: Custom # Attach
+BraceWrapping:
+  AfterClass:               true
+  AfterControlStatement:    true
+  AfterEnum:                true
+  AfterFunction:            true
+  AfterNamespace:           true
+  AfterObjCDeclaration:     true
+  AfterStruct:              true
+  AfterUnion:               true
+  AfterCaseLabel:           true
+  BeforeCatch:              true
+  BeforeElse:               true
+  IndentBraces:             false
+BreakBeforeBinaryOperators: NonAssignment
+BreakBeforeTernaryOperators: true
+BreakConstructorInitializersBeforeComma: true
+BreakConstructorInitializers: BeforeComma
+ColumnLimit: 120
+CompactNamespaces: false
+ConstructorInitializerAllOnOneLineOrOnePerLine: false
+ConstructorInitializerIndentWidth: 4
+ContinuationIndentWidth: 4
+Cpp11BracedListStyle: true
+SpaceBeforeCpp11BracedList: false
+# Concepts related settings:
+BreakBeforeConceptDeclarations: Always
+RequiresExpressionIndentation: OuterScope # requires clang-format 16
+SpaceBeforeParens: Custom
+SpaceBeforeParensOptions:
+  AfterControlStatements:    true
+  AfterRequiresInClause:     true
+  AfterRequiresInExpression: true
+DerivePointerAlignment: false
+DisableFormat:   false
+ExperimentalAutoDetectBinPacking: false
+FixNamespaceComments: true
+IndentCaseLabels: false
+IndentWidth: 4
+IndentWrappedFunctionNames: false
+IndentRequiresClause: true
+KeepEmptyLinesAtTheStartOfBlocks: false
+MacroBlockBegin: ''
+MacroBlockEnd: ''
+MaxEmptyLinesToKeep: 2
+NamespaceIndentation: None
+PenaltyBreakBeforeFirstCallParameter: 19
+PenaltyBreakComment: 300
+PenaltyBreakFirstLessLess: 120
+PenaltyBreakString: 1000
+PenaltyExcessCharacter: 1000000
+PenaltyReturnTypeOnItsOwnLine: 60
+PointerAlignment: Left
+# QualifierAlignment: Custom
+# QualifierOrder: ['static', 'friend', 'inline', 'constexpr', 'const', 'type', 'volatile']
+ReflowComments: true
+SortIncludes: true
+SpaceAfterCStyleCast: false
+SpaceAfterTemplateKeyword: false # "template<typename T>" instead of "template <typename T>"
+SpaceBeforeAssignmentOperators: true
+SpaceBeforeInheritanceColon: true
+# SpaceBeforeParens: ControlStatements
+SpaceInEmptyParentheses: false
+SpacesBeforeTrailingComments: 1
+SpacesInAngles: false
+SpacesInContainerLiterals: false
+SpacesInCStyleCastParentheses: false
+SpacesInParentheses: false
+SpacesInSquareBrackets: false
+Standard: Latest
+TabWidth: 4
+UseTab: Never
+...

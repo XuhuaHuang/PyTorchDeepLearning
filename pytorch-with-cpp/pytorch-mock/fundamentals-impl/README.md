@@ -1,5 +1,7 @@
 # `std::vector` Template Type Deduction Guide
 
+[![wakatime](https://wakatime.com/badge/user/f89598ea-6723-481b-a51b-6323e54a3c5c/project/d45ff413-cb36-46d9-ac31-4036f3728c7d.svg)][wakatime_project_status]
+
 ```c++
 namespace std
 {
@@ -22,3 +24,5 @@ vector(Args&&...) -> vector<T>;
 
 }
 ```
+
+[wakatime_project_status]: https://wakatime.com/badge/user/f89598ea-6723-481b-a51b-6323e54a3c5c/project/d45ff413-cb36-46d9-ac31-4036f3728c7d
